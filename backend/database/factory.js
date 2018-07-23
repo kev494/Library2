@@ -13,13 +13,15 @@
 
 const Factory = use('Factory')
 
-/**
+
   Factory.blueprint('App/Models/User', (faker) => {
     return {
-      username: faker.username()
+      username: 'admin',
+      email: 'admin@admin.ch',
+      password: 'secret'
     }
   })
-*/
+
 
 Factory.blueprint('App/Models/Genre', (faker) => {
   return {

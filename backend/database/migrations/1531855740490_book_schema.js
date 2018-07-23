@@ -8,7 +8,6 @@ class BookSchema extends Schema {
       table.increments()
       table.text('title').notNullable()
       table.integer('author_id').unsigned().notNullable()
-      table.integer('genre_id').unsigned().notNullable()
       table.text('description')
       table.timestamps()
     })

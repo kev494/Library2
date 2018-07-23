@@ -29,3 +29,27 @@ Route.group(() => {
 })
   .prefix('account')
   .middleware(['auth:jwt'])
+
+Route.group(() => {
+  Route.post('books', 'BookController.store')
+  Route.get('books','BookController.index')
+  Route.put('books/:id', 'BookController.update')
+  Route.get('books/:id', 'BookController.show')
+  Route.delete('books/:id', 'BookController.delete')
+})
+
+Route.group(() => {
+  Route.post('genres', 'GenreController.store')
+  Route.get('genres','GenreController.index')
+  Route.put('genres/:id', 'GenreController.update')
+  Route.get('genres/:id', 'GenreController.show')
+  Route.delete('genres/:id', 'GenreController.delete')
+})
+
+Route.group(() => {
+  Route.post('authors', 'AuthorController.store')
+  Route.get('authors','AuthorController.index')
+  Route.put('authors/:id', 'AuthorController.update')
+  Route.get('authors/:id', 'AuthorController.show')
+  Route.delete('authors/:id', 'AuthorController.delete')
+})

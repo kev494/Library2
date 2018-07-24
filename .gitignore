@@ -5,11 +5,9 @@ node_modules
 tmp
 
 # Environment variables, never commit this file
-backend/.env
-backend/package-lock.json
-backend/node_modules
+library-server/.env
+library-server/package-lock.json
+library-server/node_modules
 .DS_Store
 
 
-# The development sqlite file
-database/development.sqlite

@@ -6,8 +6,7 @@ tmp
 
 # Environment variables, never commit this file
 library-server/.env
-library-server/package-lock.json
-library-server/node_modules
+package-lock.json
 .DS_Store
 
 

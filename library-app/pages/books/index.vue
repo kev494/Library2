@@ -1,13 +1,15 @@
 <template>
-<div class="container">
-    <el-row>
-        <el-col>
-            <h1>Books</h1>
-        </el-col>
-    </el-row>
+<div>
     
 </div>
+
 </template>
+<script>
+export default {
+  
+}
+</script>
+
 <style>
 </style>
 

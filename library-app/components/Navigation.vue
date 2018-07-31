@@ -1,12 +1,13 @@
 <template>
-    <el-aside width=auto>
+    <el-aside width=auto >
     <el-menu
       class="el-menu-vertical"
       @open="handleOpen"
       @close="handleClose"
       background-color="#545c64"
       text-color="#fff"
-      active-text-color="#32CD32">
+      active-text-color="#32CD32"
+      width="auto">
       <el-menu-item index=0>
           <i class="el-icon-menu"></i>
           <span><router-link class="navbar-link" to="/">Index</router-link></span>

@@ -7,6 +7,7 @@
             </nuxt-link>
         </div>
         <div class="text item">
+            <p>{{ bookDescription }}</p>
             <p>{{ bookAuthor }}</p>
             <p>{{ bookGenres }}</p>
         </div>
@@ -14,6 +15,6 @@
 </template>
 <script>
 export default {
-  props: ["bookTitle", "bookAuthor", "bookGenres", "id"]
+  props: ["bookTitle", "bookDescription" , "bookAuthor", "bookGenres", "id"]
 };
 </script>

@@ -1,16 +1,21 @@
 <template>
-  <el-container>
-    <Navigation/>
-    <el-main>
-      <nuxt/>
-    </el-main>
+  <el-container direction="vertical">
+    <Header/>
+    <el-container>
+      <Navigation/>
+      <el-main>
+        <nuxt/>
+      </el-main>
+    </el-container>
   </el-container>
 </template>
 <script>
 import Navigation from '~/components/Navigation';
+import Header from '~/components/Header';
 export default {
   components: {
-    Navigation
+    Navigation,
+    Header
   }
 }
 </script>

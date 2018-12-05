@@ -4,7 +4,5 @@
     </el-header>
 </template>
 <style scoped>
-.el-header {
-    padding-left : 0px;
-}
+
 </style>

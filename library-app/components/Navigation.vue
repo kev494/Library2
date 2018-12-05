@@ -5,9 +5,7 @@
       default-active="1"
       @open="handleOpen"
       @close="handleClose"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#32CD32"
+    
       >
       <el-menu-item index="0">
           <i class="el-icon-menu"></i>

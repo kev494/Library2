@@ -35,8 +35,6 @@ export default {
 </script>
 
 <style>
-.el-card {
-  margin-bottom: 20px;
-}
+
 </style>
 

@@ -18,3 +18,8 @@ export default {
   props: ["bookTitle", "bookDescription" , "bookAuthor", "bookGenres", "id"]
 };
 </script>
+<style>
+.el-card {
+  margin-bottom: 20px;
+}
+</style>

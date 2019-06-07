@@ -1,31 +1,33 @@
 <template>
-    <el-aside width=201px >
-    <el-menu
-      class="el-menu-vertical"
-      default-active="1"
-      @open="handleOpen"
-      @close="handleClose"
-    
-      >
-      <el-menu-item index="0">
+  <el-aside width="201px">
+    <el-menu class="el-menu-vertical" default-active="1" @open="handleOpen" @close="handleClose">
+      <router-link class="navbar-link" to="/">
+        <el-menu-item index="0">
           <i class="el-icon-menu"></i>
-          <span><router-link class="navbar-link" to="/">Index</router-link></span>
-      </el-menu-item>
+         Index
+        </el-menu-item>
+      </router-link>
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-document"></i>
           <span>Books</span>
         </template>
-          <el-menu-item index="1-1"><router-link class="navbar-link" to="/books">All books</router-link></el-menu-item>
-          <el-menu-item index="1-2"><router-link class="navbar-link" to="/genres">Genres</router-link></el-menu-item>
-          <el-menu-item index="1-3"><router-link class="navbar-link" to="/authors">Authors</router-link></el-menu-item>
+        <router-link class="navbar-link" to="/books">
+          <el-menu-item index="1-1">All books</el-menu-item>
+        </router-link>
+        <router-link class="navbar-link" to="/genres">
+          <el-menu-item index="1-2">Genres</el-menu-item>
+        </router-link>
+        <router-link class="navbar-link" to="/authors">
+          <el-menu-item index="1-3">Authors</el-menu-item>
+        </router-link>
       </el-submenu>
       <el-menu-item index="2">
         <i class="el-icon-mobile-phone"></i>
         <span>Games</span>
       </el-menu-item>
     </el-menu>
-    </el-aside>
+  </el-aside>
 </template>
 <script>
 export default {
